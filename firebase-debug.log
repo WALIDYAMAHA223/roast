@@ -1,0 +1,63 @@
+[debug] [2025-09-19T12:45:27.532Z] ----------------------------------------------------------------------
+[debug] [2025-09-19T12:45:27.534Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\loubn\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2025-09-19T12:45:27.534Z] CLI Version:   14.17.0
+[debug] [2025-09-19T12:45:27.534Z] Platform:      win32
+[debug] [2025-09-19T12:45:27.534Z] Node Version:  v23.8.0
+[debug] [2025-09-19T12:45:27.534Z] Time:          Fri Sep 19 2025 14:45:27 GMT+0200 (heure d’été d’Europe centrale)
+[debug] [2025-09-19T12:45:27.535Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-09-19T12:45:27.538Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-09-19T12:45:27.538Z] > authorizing via signed-in user (walidbxl933@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\loubn\Desktop\auto ecole
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2025-09-19T12:45:58.650Z] Checked if tokens are valid: true, expires at: 1758289298834
+[debug] [2025-09-19T12:45:58.650Z] Checked if tokens are valid: true, expires at: 1758289298834
+[debug] [2025-09-19T12:45:58.652Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1/projects:checkProjectId [none]
+[debug] [2025-09-19T12:45:58.652Z] >>> [apiv2][body] POST https://firebase.googleapis.com/v1/projects:checkProjectId {"proposedId":"roastme"}
+[debug] [2025-09-19T12:45:59.023Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1/projects:checkProjectId 200
+[debug] [2025-09-19T12:45:59.023Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1/projects:checkProjectId {"projectIdStatus":"PROJECT_ID_UNAVAILABLE","suggestedProjectId":"roastme-b280d"}
+[debug] [2025-09-19T12:46:09.261Z] Checked if tokens are valid: true, expires at: 1758289298834
+[debug] [2025-09-19T12:46:09.261Z] Checked if tokens are valid: true, expires at: 1758289298834
+[debug] [2025-09-19T12:46:09.262Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1/projects:checkProjectId [none]
+[debug] [2025-09-19T12:46:09.262Z] >>> [apiv2][body] POST https://firebase.googleapis.com/v1/projects:checkProjectId {"proposedId":"roastme-b280d"}
+[debug] [2025-09-19T12:46:09.521Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1/projects:checkProjectId 200
+[debug] [2025-09-19T12:46:09.521Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1/projects:checkProjectId {"projectIdStatus":"PROJECT_ID_AVAILABLE","suggestedProjectId":"roastme-b280d"}
+[debug] [2025-09-19T12:46:13.757Z] Checked if tokens are valid: true, expires at: 1758289298834
+[debug] [2025-09-19T12:46:13.758Z] Checked if tokens are valid: true, expires at: 1758289298834
+[debug] [2025-09-19T12:46:13.758Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2025-09-19T12:46:13.758Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"roastme-b280d","name":"roastme-b280d"}
+[debug] [2025-09-19T12:46:14.618Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2025-09-19T12:46:14.618Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/create_project.global.5628253114081623600"}
+[debug] [2025-09-19T12:46:14.619Z] Checked if tokens are valid: true, expires at: 1758289298834
+[debug] [2025-09-19T12:46:14.619Z] Checked if tokens are valid: true, expires at: 1758289298834
+[debug] [2025-09-19T12:46:14.619Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.5628253114081623600 [none]
+[debug] [2025-09-19T12:46:15.295Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.5628253114081623600 200
+[debug] [2025-09-19T12:46:15.295Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.5628253114081623600 {"name":"operations/create_project.global.5628253114081623600","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","ready":true},"done":true,"error":{"code":9,"message":"Callers must accept Terms of Service","details":[{"@type":"type.googleapis.com/google.rpc.PreconditionFailure","violations":[{"type":"TOS","subject":"cloud","description":"Callers must accept Terms of Service"}]}]}}
+[debug] [2025-09-19T12:46:15.355Z] FirebaseError: Callers must accept Terms of Service
+    at OperationPoller.poll (C:\Users\loubn\AppData\Roaming\npm\node_modules\firebase-tools\lib\operation-poller.js:24:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async createCloudProject (C:\Users\loubn\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:215:29)
+    at async createFirebaseProjectAndLog (C:\Users\loubn\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:83:9)
+    at async promptAndCreateNewProject (C:\Users\loubn\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:31:12)
+    at async Object.doSetup (C:\Users\loubn\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:89:31)
+    at async init (C:\Users\loubn\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:68:13)
+    at async Command.initAction [as actionFn] (C:\Users\loubn\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\init.js:214:5)
+[error] 
+[error] Error: Failed to create project. See firebase-debug.log for more info.
